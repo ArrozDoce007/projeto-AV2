@@ -94,12 +94,10 @@
 
                 function onPlayerStateChange(event) {
                   if (event.data === YT.PlayerState.PLAYING) {
-                    // Pausar o carrossel enquanto o vídeo está sendo reproduzido
                     myCarousel.carousel('pause');
                   } else if (event.data === YT.PlayerState.ENDED) {
                     var videoContainer = document.getElementById('videoPlayerContainer');
                     videoContainer.style.display = 'none';
-                    // Retomar o carrossel quando o vídeo termina
                     myCarousel.carousel('cycle');
                   }
                 }
@@ -112,14 +110,12 @@
                   var videoContainer = document.getElementById('videoPlayerContainer');
                   videoContainer.style.display = 'block';
 
-                  // Iniciar o vídeo e pausar o carrossel
                   player.playVideo();
                   myCarousel.carousel('pause');
                 }
 
                 document.addEventListener('DOMContentLoaded', function () {
-                  // Inicializar o carrossel quando o DOM estiver pronto
-                  myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), { interval: 5000 }); // ajuste o intervalo conforme necessário
+                  myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), { interval: 5000 });
                 });
 
               </script>
