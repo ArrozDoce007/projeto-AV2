@@ -2,7 +2,7 @@
 
 Copia do site oficial do Fortnite com uso de bootstrap
 
-[Clique aqui para acessar a página](https://projeto-av2-fortnite.netlify.app){:target=_blank}
+[Clique aqui para acessar a página](https://projeto-av2-fortnite.netlify.app){:target="_blank" rel="noopener"}
 
 
 ![image](https://github.com/ArrozDoce007/projeto-AV2/assets/143344186/63c7d2c1-663c-400b-bfcb-63788a824ae4)
